@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esercizio Cercare Elementi nel DOM</title>
+    <script>
+      const p = document.getElementsByClassName("paragrafo");
+      console.log(p);
+
+      const id = document.getElementById("elemento-3");
+      console.log(id);
+
+      const h2 = document.querySelectorAll("h2");
+      console.log(h2);
+    </script>
   </head>
   <body>
     <h2>Benvenuto nella mia Pagina</h2>
@@ -24,9 +34,9 @@ const p = document.getElementsByClassName('paragrafo');
 
 p
 
-const p = document.getElementById('elemento-3')
+const id = document.getElementById('elemento-3')
 
-p
+id
 
 const h2 = document.querySelectorAll('h2')
 
