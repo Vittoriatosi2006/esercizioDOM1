@@ -17,4 +17,20 @@ function addProduct() {
   li.appendChild(span);
 
   input.value = "";
+
+  checkbox.addEventListener("change", function () {
+    span.style.textDecoration = checkbox.checked ? "line-through" : "";
+  });
+
+  const $deleteButton = document.createElement("button");
+  $deleteButton.innerText = "elimina";
+  li.appendChild($deleteButton);
+
+  $deleteButton.addEventListener("click", function () {
+    li.remove();
+  });
 }
+
+const $button = document.querySelector(".btn");
+
+$button.addEventListener("click", addProduct);
